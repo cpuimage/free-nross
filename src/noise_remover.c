@@ -382,9 +382,6 @@ fract16 noise_remover (struct noise_remover_s * nrm, fract16 x, int training)
 
         if(nrm->alpha[k] > MAXALPHA)
             nrm->alpha[k] = MAXALPHA;
-
-        //test: alpha[k] = 1.0
-        //nrm->alpha[k] = 0x7FFF;
     }
 
     /* calculate de-noised signal */
